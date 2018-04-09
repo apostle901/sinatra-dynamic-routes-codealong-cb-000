@@ -20,9 +20,8 @@ class App < Sinatra::Base
   end
 
   get "/multiply/:num1/:num2" do
-    @number1 = params[:num1]
-    @number2 = params[:num2]
-    "#{@number1 * @number2}"
+    @product = params[:num1] * param[:num2]
+    "#{@product}"
   end
 
 end
